@@ -2,6 +2,7 @@
 using Api_Karate_Pro.model.proc;
 using Api_Karate_Pro.model.Request;
 using Api_Karate_Pro.model.Response;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,6 +10,7 @@ namespace Api_Karate_Pro.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class UsuarioController : ControllerBase
     {
         private readonly Utilidades _utilidades;
