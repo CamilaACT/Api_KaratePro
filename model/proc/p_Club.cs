@@ -88,7 +88,7 @@ namespace Api_Karate_Pro.model.proc
             return res;
         }
 
-        public static Respuesta eliminaClub(club_E_club club)
+        public static Respuesta eliminaClub(int clu_id)
         {
 
             Respuesta res = new Respuesta() { CodigoError = 0, Message = "Sin Resultados", Result = null };
@@ -100,7 +100,7 @@ namespace Api_Karate_Pro.model.proc
                 string strCon = util.Conexion.Conexion.CadenaConexion();
                 string[] vector = new string[1];
                 cb.sp = "usp_Web_club_E_club";//poner el nombre correcto
-                vector[0] = "@clu_id,i," + club.clu_id;
+                vector[0] = "@clu_id,i," + clu_id;
                 dt = cb.consultar(vector, 1, strCon);
 
                 res.CodigoError = cb.valo_erro;
@@ -128,7 +128,7 @@ namespace Api_Karate_Pro.model.proc
             return res;
         }
 
-        public static Respuesta grabaClub(club_G_club club)
+        public static Respuesta grabaClub(club_A_club club)
         {
 
             Respuesta res = new Respuesta() { CodigoError = 0, Message = "Sin Resultados", Result = null };
