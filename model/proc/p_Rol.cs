@@ -87,7 +87,7 @@ namespace Api_Karate_Pro.model.proc
             return res;
         }
 
-        public static Respuesta eliminaRol(rol_E_rol rol)
+        public static Respuesta eliminaRol(int rol_id)
         {
 
             Respuesta res = new Respuesta() { CodigoError = 0, Message = "Sin Resultados", Result = null };
@@ -99,7 +99,7 @@ namespace Api_Karate_Pro.model.proc
                 string strCon = util.Conexion.Conexion.CadenaConexion();
                 string[] vector = new string[1];
                 cb.sp = "usp_Web_rol_E_rol";//poner el nombre correcto
-                vector[0] = "@rol_id,i," + rol.rol_id;
+                vector[0] = "@rol_id,i," + rol_id;
                 dt = cb.consultar(vector, 1, strCon);
 
                 res.CodigoError = cb.valo_erro;

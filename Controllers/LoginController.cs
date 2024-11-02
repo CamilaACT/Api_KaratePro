@@ -21,7 +21,7 @@ namespace Api_Karate_Pro.Controllers
         }
         [HttpPost]
         [Route("registrarse")]
-        public Respuesta m_1_Login_1_1([FromBody] usuario_G_usuario usaurio1)
+        public Respuesta m_1_Login_1_1([FromBody] usuario_A_usuario usaurio1)
         {
             var contrasenia = _utilidades.encriptaSHA256(usaurio1.usu_clave);
             usaurio1.usu_clave = contrasenia;

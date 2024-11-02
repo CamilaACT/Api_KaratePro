@@ -87,7 +87,7 @@ namespace Api_Karate_Pro.model.proc
             return res;
         }
 
-        public static Respuesta eliminaRango(rango_E_rango rango)
+        public static Respuesta eliminaRango(int ran_id)
         {
 
             Respuesta res = new Respuesta() { CodigoError = 0, Message = "Sin Resultados", Result = null };
@@ -99,7 +99,7 @@ namespace Api_Karate_Pro.model.proc
                 string strCon = util.Conexion.Conexion.CadenaConexion();
                 string[] vector = new string[1];
                 cb.sp = "usp_Web_rango_E_rango";//poner el nombre correcto
-                vector[0] = "@ran_id,i," + rango.ran_id;
+                vector[0] = "@ran_id,i," + ran_id;
                 dt = cb.consultar(vector, 1, strCon);
 
                 res.CodigoError = cb.valo_erro;
@@ -127,7 +127,7 @@ namespace Api_Karate_Pro.model.proc
             return res;
         }
 
-        public static Respuesta grabaRango(rango_G_rango rango)
+        public static Respuesta grabaRango(rango_A_rango rango)
         {
 
             Respuesta res = new Respuesta() { CodigoError = 0, Message = "Sin Resultados", Result = null };

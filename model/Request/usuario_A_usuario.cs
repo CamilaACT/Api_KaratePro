@@ -2,7 +2,7 @@
 {
     public class usuario_A_usuario
     {
-        public int us_id { get; set; }
+        public int usu_id { get; set; }
         public int rol_id { get; set; }
         public string usu_nombre { get; set; }
         public string usu_cedula { get; set; }

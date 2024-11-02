@@ -17,16 +17,16 @@ namespace Api_Karate_Pro.model.proc
                 data.DAO.c_base_datos cb = new data.DAO.c_base_datos();
                 System.Data.DataTable dt;
                 string strCon = util.Conexion.Conexion.CadenaConexion();
-                string[] vector = new string[8];
-                cb.sp = "usp_Web_usuario_G_usuario";//poner el nombre correcto
-                vector[1] = "@us_id,i," + usuario.us_id;
-                vector[2] = "@rol_id,i," + usuario.rol_id;
-                vector[3] = "@usu_nombre,v," + usuario.usu_nombre;
-                vector[4] = "@usu_cedula,v," + usuario.usu_cedula;
-                vector[5] = "@usu_correo,v," + usuario.usu_correo;
-                vector[6] = "@rol_descripcion,v," + usuario.rol_descripcion;
-                vector[7] = "@clave,v," + usuario.usu_clave;
-                dt = cb.consultar(vector,8, strCon);
+                string[] vector = new string[7];
+                cb.sp = "usp_Web_usuario_A_usuario";//poner el nombre correcto
+                vector[0] = "@us_id,i," + usuario.usu_id;
+                vector[1] = "@rol_id,i," + usuario.rol_id;
+                vector[2] = "@usu_nombre,v," + usuario.usu_nombre;
+                vector[3] = "@usu_cedula,v," + usuario.usu_cedula;
+                vector[4] = "@usu_correo,v," + usuario.usu_correo;
+                vector[5] = "@rol_descripcion,v," + usuario.rol_descripcion;
+                vector[6] = "@clave,v," + usuario.usu_clave;
+                dt = cb.consultar(vector,7, strCon);
 
                 res.CodigoError = cb.valo_erro;
                 if (res.CodigoError == -1)
@@ -91,7 +91,7 @@ namespace Api_Karate_Pro.model.proc
             return res;
         }
 
-        public static Respuesta eliminaUsuario(usuario_E_usuario usuario)
+        public static Respuesta eliminaUsuario(int us_id)
         {
 
             Respuesta res = new Respuesta() { CodigoError = 0, Message = "Sin Resultados", Result = null };
@@ -103,7 +103,7 @@ namespace Api_Karate_Pro.model.proc
                 string strCon = util.Conexion.Conexion.CadenaConexion();
                 string[] vector = new string[1];
                 cb.sp = "usp_Web_usuario_E_usuario";//poner el nombre correcto
-                vector[0] = "@us_id,i," + usuario.us_id;
+                vector[0] = "@usu_id,i," + us_id;
                 dt = cb.consultar(vector, 1, strCon);
 
                 res.CodigoError = cb.valo_erro;
@@ -131,7 +131,7 @@ namespace Api_Karate_Pro.model.proc
             return res;
         }
 
-        public static Respuesta grabaUsuario(usuario_G_usuario usuario)
+        public static Respuesta grabaUsuario(usuario_A_usuario usuario)
         {
 
             Respuesta res = new Respuesta() { CodigoError = 0, Message = "Sin Resultados", Result = null };
