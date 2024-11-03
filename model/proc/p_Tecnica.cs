@@ -88,7 +88,7 @@ namespace Api_Karate_Pro.model.proc
             return res;
         }
 
-        public static Respuesta eliminaTecnica(tecnica_A_tecnica tecnica)
+        public static Respuesta eliminaTecnica(int tec_id)
         {
 
             Respuesta res = new Respuesta() { CodigoError = 0, Message = "Sin Resultados", Result = null };
@@ -100,7 +100,7 @@ namespace Api_Karate_Pro.model.proc
                 string strCon = util.Conexion.Conexion.CadenaConexion();
                 string[] vector = new string[1];
                 cb.sp = "usp_Web_tecnica_E_tecnica";//poner el nombre correcto
-                vector[0] = "@tec_id,i," + tecnica.tec_id;
+                vector[0] = "@tec_id,i," + tec_id;
                 dt = cb.consultar(vector, 1, strCon);
 
                 res.CodigoError = cb.valo_erro;
@@ -128,7 +128,7 @@ namespace Api_Karate_Pro.model.proc
             return res;
         }
 
-        public static Respuesta grabaTecnica(tecnica_G_tecnica tecnica)
+        public static Respuesta grabaTecnica(tecnica_A_tecnica tecnica)
         {
 
             Respuesta res = new Respuesta() { CodigoError = 0, Message = "Sin Resultados", Result = null };
