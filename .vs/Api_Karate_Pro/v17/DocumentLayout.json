@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\SeptimoSemestre\\Web\\AdminCore\\ApiCore\\Api_Karate_Pro\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{ED350F88-2B09-4520-8521-CA8E3597A824}|Api_Karate_Pro.csproj|c:\\users\\camil\\onedrive\\documentos\\udla\\septimosemestre\\web\\admincore\\apicore\\api_karate_pro\\model\\request\\tecnica_a_tecnica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED350F88-2B09-4520-8521-CA8E3597A824}|Api_Karate_Pro.csproj|solutionrelative:model\\request\\tecnica_a_tecnica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{ED350F88-2B09-4520-8521-CA8E3597A824}|Api_Karate_Pro.csproj|c:\\users\\camil\\onedrive\\documentos\\udla\\septimosemestre\\web\\admincore\\apicore\\api_karate_pro\\controllers\\tecnicacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ED350F88-2B09-4520-8521-CA8E3597A824}|Api_Karate_Pro.csproj|solutionrelative:controllers\\tecnicacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -122,10 +126,6 @@
       "RelativeMoniker": "D:0:0:{ED350F88-2B09-4520-8521-CA8E3597A824}|Api_Karate_Pro.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED350F88-2B09-4520-8521-CA8E3597A824}|Api_Karate_Pro.csproj|c:\\users\\camil\\onedrive\\documentos\\udla\\septimosemestre\\web\\admincore\\apicore\\api_karate_pro\\model\\request\\tecnica_a_tecnica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED350F88-2B09-4520-8521-CA8E3597A824}|Api_Karate_Pro.csproj|solutionrelative:model\\request\\tecnica_a_tecnica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{ED350F88-2B09-4520-8521-CA8E3597A824}|Api_Karate_Pro.csproj|c:\\users\\camil\\onedrive\\documentos\\udla\\septimosemestre\\web\\admincore\\apicore\\api_karate_pro\\model\\request\\pelea_a_pelea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ED350F88-2B09-4520-8521-CA8E3597A824}|Api_Karate_Pro.csproj|solutionrelative:model\\request\\pelea_a_pelea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -165,24 +165,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "TecnicaController.cs",
               "DocumentMoniker": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\SeptimoSemestre\\Web\\AdminCore\\ApiCore\\Api_Karate_Pro\\Controllers\\TecnicaController.cs",
               "RelativeDocumentMoniker": "Controllers\\TecnicaController.cs",
               "ToolTip": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\SeptimoSemestre\\Web\\AdminCore\\ApiCore\\Api_Karate_Pro\\Controllers\\TecnicaController.cs",
               "RelativeToolTip": "Controllers\\TecnicaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowAkAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-03T01:55:56.908Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "RangoController.cs",
               "DocumentMoniker": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\SeptimoSemestre\\Web\\AdminCore\\ApiCore\\Api_Karate_Pro\\Controllers\\RangoController.cs",
               "RelativeDocumentMoniker": "Controllers\\RangoController.cs",
@@ -190,12 +190,11 @@
               "RelativeToolTip": "Controllers\\RangoController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T21:03:19.278Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-02T21:03:19.278Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "RolController.cs",
               "DocumentMoniker": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\SeptimoSemestre\\Web\\AdminCore\\ApiCore\\Api_Karate_Pro\\Controllers\\RolController.cs",
               "RelativeDocumentMoniker": "Controllers\\RolController.cs",
@@ -203,12 +202,11 @@
               "RelativeToolTip": "Controllers\\RolController.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T16:29:12.169Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-02T16:29:12.169Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "p_Tecnica.cs",
               "DocumentMoniker": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\SeptimoSemestre\\Web\\AdminCore\\ApiCore\\Api_Karate_Pro\\model\\proc\\p_Tecnica.cs",
               "RelativeDocumentMoniker": "model\\proc\\p_Tecnica.cs",
@@ -216,12 +214,24 @@
               "RelativeToolTip": "model\\proc\\p_Tecnica.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAFoAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T00:53:12.125Z",
+              "WhenOpened": "2024-11-02T00:53:12.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "tecnica_A_tecnica.cs",
+              "DocumentMoniker": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\SeptimoSemestre\\Web\\AdminCore\\ApiCore\\Api_Karate_Pro\\model\\Request\\tecnica_A_tecnica.cs",
+              "RelativeDocumentMoniker": "model\\Request\\tecnica_A_tecnica.cs",
+              "ToolTip": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\SeptimoSemestre\\Web\\AdminCore\\ApiCore\\Api_Karate_Pro\\model\\Request\\tecnica_A_tecnica.cs",
+              "RelativeToolTip": "model\\Request\\tecnica_A_tecnica.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T00:52:13.633Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "competencia_A_competencia.cs",
               "DocumentMoniker": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\SeptimoSemestre\\Web\\AdminCore\\ApiCore\\Api_Karate_Pro\\model\\Request\\competencia_A_competencia.cs",
               "RelativeDocumentMoniker": "model\\Request\\competencia_A_competencia.cs",
@@ -229,12 +239,11 @@
               "RelativeToolTip": "model\\Request\\competencia_A_competencia.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T20:11:15.999Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-01T20:11:15.999Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ClubController.cs",
               "DocumentMoniker": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\SeptimoSemestre\\Web\\AdminCore\\ApiCore\\Api_Karate_Pro\\Controllers\\ClubController.cs",
               "RelativeDocumentMoniker": "Controllers\\ClubController.cs",
@@ -242,12 +251,11 @@
               "RelativeToolTip": "Controllers\\ClubController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T23:00:54.644Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-02T23:00:54.644Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "p_Competencia.cs",
               "DocumentMoniker": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\SeptimoSemestre\\Web\\AdminCore\\ApiCore\\Api_Karate_Pro\\model\\proc\\p_Competencia.cs",
               "RelativeDocumentMoniker": "model\\proc\\p_Competencia.cs",
@@ -255,12 +263,11 @@
               "RelativeToolTip": "model\\proc\\p_Competencia.cs",
               "ViewState": "AgIAADEAAAAAAAAAAAAgwIkAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T20:10:45.008Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-01T20:10:45.008Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "CompetenciaController.cs",
               "DocumentMoniker": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\SeptimoSemestre\\Web\\AdminCore\\ApiCore\\Api_Karate_Pro\\Controllers\\CompetenciaController.cs",
               "RelativeDocumentMoniker": "Controllers\\CompetenciaController.cs",
@@ -268,12 +275,11 @@
               "RelativeToolTip": "Controllers\\CompetenciaController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T23:51:34.564Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-02T23:51:34.564Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "LoginController.cs",
               "DocumentMoniker": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\SeptimoSemestre\\Web\\AdminCore\\ApiCore\\Api_Karate_Pro\\Controllers\\LoginController.cs",
               "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
@@ -281,12 +287,11 @@
               "RelativeToolTip": "Controllers\\LoginController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T10:33:34.152Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-02T10:33:34.152Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "UsuarioController.cs",
               "DocumentMoniker": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\SeptimoSemestre\\Web\\AdminCore\\ApiCore\\Api_Karate_Pro\\Controllers\\UsuarioController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
@@ -294,12 +299,11 @@
               "RelativeToolTip": "Controllers\\UsuarioController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T15:11:15.938Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-02T15:11:15.938Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "club_A_club.cs",
               "DocumentMoniker": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\SeptimoSemestre\\Web\\AdminCore\\ApiCore\\Api_Karate_Pro\\model\\Request\\club_A_club.cs",
               "RelativeDocumentMoniker": "model\\Request\\club_A_club.cs",
@@ -307,12 +311,11 @@
               "RelativeToolTip": "model\\Request\\club_A_club.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T20:00:51.217Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-01T20:00:51.217Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\SeptimoSemestre\\Web\\AdminCore\\ApiCore\\Api_Karate_Pro\\model\\Request\\Usuario.cs",
               "RelativeDocumentMoniker": "model\\Request\\Usuario.cs",
@@ -324,7 +327,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "rango_A_rango.cs",
               "DocumentMoniker": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\SeptimoSemestre\\Web\\AdminCore\\ApiCore\\Api_Karate_Pro\\model\\Request\\rango_A_rango.cs",
               "RelativeDocumentMoniker": "model\\Request\\rango_A_rango.cs",
@@ -336,7 +339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "c_base_datos.cs",
               "DocumentMoniker": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\SeptimoSemestre\\Web\\AdminCore\\ApiCore\\Api_Karate_Pro\\data\\DAO\\c_base_datos.cs",
               "RelativeDocumentMoniker": "data\\DAO\\c_base_datos.cs",
@@ -348,7 +351,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "p_Club.cs",
               "DocumentMoniker": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\SeptimoSemestre\\Web\\AdminCore\\ApiCore\\Api_Karate_Pro\\model\\proc\\p_Club.cs",
               "RelativeDocumentMoniker": "model\\proc\\p_Club.cs",
@@ -360,7 +363,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "p_Rango.cs",
               "DocumentMoniker": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\SeptimoSemestre\\Web\\AdminCore\\ApiCore\\Api_Karate_Pro\\model\\proc\\p_Rango.cs",
               "RelativeDocumentMoniker": "model\\proc\\p_Rango.cs",
@@ -372,7 +375,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "p_Usuario.cs",
               "DocumentMoniker": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\SeptimoSemestre\\Web\\AdminCore\\ApiCore\\Api_Karate_Pro\\model\\proc\\p_Usuario.cs",
               "RelativeDocumentMoniker": "model\\proc\\p_Usuario.cs",
@@ -384,7 +387,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "usuario_A_usuario.cs",
               "DocumentMoniker": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\SeptimoSemestre\\Web\\AdminCore\\ApiCore\\Api_Karate_Pro\\model\\Request\\usuario_A_usuario.cs",
               "RelativeDocumentMoniker": "model\\Request\\usuario_A_usuario.cs",
@@ -396,7 +399,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "rol_A_rol.cs",
               "DocumentMoniker": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\SeptimoSemestre\\Web\\AdminCore\\ApiCore\\Api_Karate_Pro\\model\\Request\\rol_A_rol.cs",
               "RelativeDocumentMoniker": "model\\Request\\rol_A_rol.cs",
@@ -408,7 +411,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "p_Rol.cs",
               "DocumentMoniker": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\SeptimoSemestre\\Web\\AdminCore\\ApiCore\\Api_Karate_Pro\\model\\proc\\p_Rol.cs",
               "RelativeDocumentMoniker": "model\\proc\\p_Rol.cs",
@@ -420,7 +423,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "p_Login.cs",
               "DocumentMoniker": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\SeptimoSemestre\\Web\\AdminCore\\ApiCore\\Api_Karate_Pro\\model\\proc\\p_Login.cs",
               "RelativeDocumentMoniker": "model\\proc\\p_Login.cs",
@@ -432,7 +435,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "usuario_E_usuario.cs",
               "DocumentMoniker": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\SeptimoSemestre\\Web\\AdminCore\\ApiCore\\Api_Karate_Pro\\model\\Request\\usuario_E_usuario.cs",
               "RelativeDocumentMoniker": "model\\Request\\usuario_E_usuario.cs",
@@ -444,7 +447,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "Conexion.cs",
               "DocumentMoniker": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\SeptimoSemestre\\Web\\AdminCore\\ApiCore\\Api_Karate_Pro\\util\\Conexion\\Conexion.cs",
               "RelativeDocumentMoniker": "util\\Conexion\\Conexion.cs",
@@ -456,7 +459,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "p_Pelea.cs",
               "DocumentMoniker": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\SeptimoSemestre\\Web\\AdminCore\\ApiCore\\Api_Karate_Pro\\model\\proc\\p_Pelea.cs",
               "RelativeDocumentMoniker": "model\\proc\\p_Pelea.cs",
@@ -468,7 +471,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "Container.targets",
               "DocumentMoniker": "C:\\Users\\camil\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\build\\Container.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\build\\Container.targets",
@@ -480,7 +483,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\SeptimoSemestre\\Web\\AdminCore\\ApiCore\\Api_Karate_Pro\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
@@ -492,7 +495,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\SeptimoSemestre\\Web\\AdminCore\\ApiCore\\Api_Karate_Pro\\model\\Request\\Login.cs",
               "RelativeDocumentMoniker": "model\\Request\\Login.cs",
@@ -504,7 +507,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\SeptimoSemestre\\Web\\AdminCore\\ApiCore\\Api_Karate_Pro\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -516,7 +519,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "Utilidades.cs",
               "DocumentMoniker": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\SeptimoSemestre\\Web\\AdminCore\\ApiCore\\Api_Karate_Pro\\Custom\\Utilidades.cs",
               "RelativeDocumentMoniker": "Custom\\Utilidades.cs",
@@ -528,7 +531,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\SeptimoSemestre\\Web\\AdminCore\\ApiCore\\Api_Karate_Pro\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -537,18 +540,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-11-02T10:14:56.695Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "tecnica_A_tecnica.cs",
-              "DocumentMoniker": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\SeptimoSemestre\\Web\\AdminCore\\ApiCore\\Api_Karate_Pro\\model\\Request\\tecnica_A_tecnica.cs",
-              "RelativeDocumentMoniker": "model\\Request\\tecnica_A_tecnica.cs",
-              "ToolTip": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\SeptimoSemestre\\Web\\AdminCore\\ApiCore\\Api_Karate_Pro\\model\\Request\\tecnica_A_tecnica.cs",
-              "RelativeToolTip": "model\\Request\\tecnica_A_tecnica.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T00:52:13.633Z"
             },
             {
               "$type": "Document",
