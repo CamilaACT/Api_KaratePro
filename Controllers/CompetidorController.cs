@@ -10,42 +10,43 @@ namespace Api_Karate_Pro.Controllers
     [Route("api/[controller]")]
     [ApiController]
     [Authorize]
-    public class TecnicaController : ControllerBase
+    public class CompetidorController : ControllerBase
     {
+
         [HttpGet]
 
         [Route("consultaTodo")]
-        public Respuesta rol_1_1()
+        public Respuesta m_1_1()
         {
-            Respuesta res = p_Tecnica.consultaTodoTecnica();
+            Respuesta res = p_Competidor.consultaTodoCompetidor();
             return res;
         }
 
 
         [HttpPut]
         [Route("actualizar")]
-        public Respuesta ro_1_2([FromBody] tecnica_A_tecnica tecnica)
+        public Respuesta m_1_2([FromBody] competidor_A_competidor competidor)
         {
 
-            Respuesta res = p_Tecnica.actualizaTecnica(tecnica);
+            Respuesta res = p_Competidor.actualizaCompetidor(competidor);
             return res;
         }
         [HttpPost]
 
         [Route("grabar")]
-        public Respuesta ro_1_3([FromBody] tecnica_A_tecnica tecnica)
+        public Respuesta m_1_3([FromBody] competidor_A_competidor competidor)
         {
 
-            Respuesta res = p_Tecnica.grabaTecnica(tecnica);
+            Respuesta res = p_Competidor.grabaCompetidor(competidor);
             return res;
         }
 
 
         [HttpDelete]
-        [Route("eliminar/{tec_id}")]
-        public Respuesta ro_1_4(int tec_id)
+        [Route("eliminar/{cmp_id}")]
+        public Respuesta m_1_4(int cmp_id)
         {
-            Respuesta res = p_Tecnica.eliminaTecnica(tec_id);
+            Respuesta res = p_Competidor.eliminaCompetidor(cmp_id);
             return res;
         }
     }

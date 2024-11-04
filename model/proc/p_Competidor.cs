@@ -20,7 +20,7 @@ namespace Api_Karate_Pro.model.proc
                 cb.sp = "usp_Web_competidor_A_competidor";//poner el nombre correcto
                 vector[0] = "@cmp_id,i," + competidor.cmp_id;
                 vector[1] = "@cmp_nombre,v," + competidor.cmp_nombre;
-                vector[2] = "@cmp_fech_naci,f," + competidor.cmp_fech_naci;
+                vector[2] = "@cmp_fech_naci,v," + competidor.cmp_fech_naci;
                 vector[3] = "@cmp_peso,i," + competidor.cmp_peso;
                 vector[4] = "@cmp_cedula,v," + competidor.cmp_cedula;
                 vector[5] = "@ran_id,i," + competidor.ran_id;
@@ -89,7 +89,7 @@ namespace Api_Karate_Pro.model.proc
             }
             return res;
         }
-        public static Respuesta eliminaCompetidor(competidor_E_competidor competidor)
+        public static Respuesta eliminaCompetidor(int cmp_id)
         {
 
             Respuesta res = new Respuesta() { CodigoError = 0, Message = "Sin Resultados", Result = null };
@@ -101,7 +101,7 @@ namespace Api_Karate_Pro.model.proc
                 string strCon = util.Conexion.Conexion.CadenaConexion();
                 string[] vector = new string[1];
                 cb.sp = "usp_Web_competidor_E_competidor";//poner el nombre correcto
-                vector[0] = "@cmp_id,i," + competidor.cmp_id;
+                vector[0] = "@cmp_id,i," + cmp_id;
                 dt = cb.consultar(vector, 1, strCon);
 
                 res.CodigoError = cb.valo_erro;
@@ -128,8 +128,7 @@ namespace Api_Karate_Pro.model.proc
             }
             return res;
         }
-
-        public static Respuesta grabaCompetidor(competidor_G_competidor competidor)
+        public static Respuesta grabaCompetidor(competidor_A_competidor competidor)
         {
 
             Respuesta res = new Respuesta() { CodigoError = 0, Message = "Sin Resultados", Result = null };
@@ -142,7 +141,7 @@ namespace Api_Karate_Pro.model.proc
                 string[] vector = new string[6];
                 cb.sp = "usp_Web_competidor_G_competidor";//poner el nombre correcto
                 vector[0] = "@cmp_nombre,v," + competidor.cmp_nombre;
-                vector[1] = "@cmp_fech_naci,f," + competidor.cmp_fech_naci;
+                vector[1] = "@cmp_fech_naci,vkk," + competidor.cmp_fech_naci;
                 vector[2] = "@cmp_peso,i," + competidor.cmp_peso;
                 vector[3] = "@cmp_cedula,v," + competidor.cmp_cedula;
                 vector[4] = "@ran_id,i," + competidor.ran_id;
@@ -173,8 +172,6 @@ namespace Api_Karate_Pro.model.proc
             }
             return res;
         }
-
-
         public static List<Dictionary<string, object>> DataTableToList(DataTable dt)
         {
             var list = new List<Dictionary<string, object>>();

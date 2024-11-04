@@ -9,6 +9,6 @@
         public int cmp_id_2 { get; set; }
         public int riv_color1 { get; set; }
         public int riv_color2 { get; set; }
-        public int tec_puntos { get; set; }
+        public string tec_puntos { get; set; }
     }
 }
