@@ -15,14 +15,15 @@ builder.Services.AddSwaggerGen();
 // Configura CORS
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAllOrigins",
-        builder =>
-        {
-            builder.AllowAnyOrigin()  // Permite todas las peticiones de cualquier origen
-                   .AllowAnyMethod()  // Permite todos los métodos (GET, POST, PUT, DELETE, etc.)
-                   .AllowAnyHeader(); // Permite todos los encabezados
-        });
+    options.AddPolicy("AllowAllOrigins", policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader()
+              .SetIsOriginAllowed(origin => true); // Permite cualquier origen
+    });
 });
+
 
 //AUTENTIFICACION TOKENS
 builder.Services.AddSingleton<Utilidades>();
