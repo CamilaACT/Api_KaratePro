@@ -19,6 +19,13 @@ namespace Api_Karate_Pro.Controllers
             return res;
         }
 
+        [HttpGet("consultaRivalesID/{pel_id}")]
+        public Respuesta m_1_1(int pel_id)
+        {
+            Respuesta res = p_Pelea.consultaRivalesID(pel_id);
+            return res;
+        }
+
 
         [HttpPut]
         [Route("actualizar")]
