@@ -44,6 +44,15 @@ namespace Api_Karate_Pro.Controllers
             Respuesta res = p_Pelea.grabaPelea(pelea);
             return res;
         }
+        [HttpPost]
+
+        [Route("grabarGanador")]
+        public Respuesta ro_1_3([FromBody] pelea_G_ganador pelea)
+        {
+
+            Respuesta res = p_Pelea.grabaGanador(pelea);
+            return res;
+        }
 
 
         [HttpDelete]
