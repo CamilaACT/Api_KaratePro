@@ -26,6 +26,16 @@ namespace Api_Karate_Pro.Controllers
         [Route("actualizar")]
         public Respuesta m_1_2([FromBody] competencia_A_competencia competencia)
         {
+            // Verifica si el modelo es válido
+            //if (!ModelState.IsValid)
+            //{
+            //    // Devuelve errores de validación
+
+            //    Respuesta respu = new Respuesta();
+            //    respu.CodigoError = 2;
+
+            //    return respu;
+            //}
 
             Respuesta res = p_Competencia.actualizaCompetencia(competencia);
             return res;
@@ -35,6 +45,16 @@ namespace Api_Karate_Pro.Controllers
         [Route("grabar")]
         public Respuesta ro_1_3([FromBody] competencia_A_competencia competencia)
         {
+
+            //if (!ModelState.IsValid)
+            //{
+            //    // Devuelve errores de validación
+
+            //    Respuesta respu = new Respuesta();
+            //    respu.CodigoError = 2;
+
+            //    return respu;
+            //}
 
             Respuesta res = p_Competencia.grabaCompetencia(competencia);
             return res;

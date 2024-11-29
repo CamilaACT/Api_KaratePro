@@ -105,7 +105,12 @@ namespace Api_Karate_Pro.Controllers
             return p_Informe.CalcularEficienciaPorEdadYRango(comId);
         }
 
-
+        [HttpGet]
+        [Route("topcompetidores")]
+        public Respuesta Topcompetidores(int comId)
+        {
+            return p_Informe.GetInformeCompetidores(comId);
+        }
 
 
     }

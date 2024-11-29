@@ -188,5 +188,35 @@ namespace Api_Karate_Pro.model.proc
 
             return list;
         }
+
+
+        public static bool EsCedulaValida(string cedula)
+        {
+            // Verificar que tenga exactamente 10 dígitos
+            if (string.IsNullOrWhiteSpace(cedula) || cedula.Length != 10 || !long.TryParse(cedula, out _))
+                return false;
+
+            // Extraer el código de provincia (2 primeros dígitos)
+            int codigoProvincia = int.Parse(cedula.Substring(0, 2));
+            if (codigoProvincia < 1 || (codigoProvincia > 24 && codigoProvincia != 30))
+                return false;
+
+            // Cálculo del dígito verificador
+            int[] coeficientes = { 2, 1, 2, 1, 2, 1, 2, 1, 2 }; // Coeficientes para las posiciones 1-9
+            int suma = 0;
+
+            for (int i = 0; i < coeficientes.Length; i++)
+            {
+                int valor = (cedula[i] - '0') * coeficientes[i]; // Multiplicar el dígito por el coeficiente
+                suma += valor > 9 ? valor - 9 : valor; // Si el resultado es mayor a 9, restar 9
+            }
+
+            int digitoVerificadorCalculado = 10 - (suma % 10);
+            if (digitoVerificadorCalculado == 10)
+                digitoVerificadorCalculado = 0;
+
+            int digitoVerificadorCedido = cedula[9] - '0'; // Último dígito de la cédula
+            return digitoVerificadorCalculado == digitoVerificadorCedido;
+        }
     }
 }

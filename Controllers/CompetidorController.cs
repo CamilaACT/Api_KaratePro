@@ -27,6 +27,15 @@ namespace Api_Karate_Pro.Controllers
         [Route("actualizar")]
         public Respuesta m_1_2([FromBody] competidor_A_competidor competidor)
         {
+            if (!p_Competidor.EsCedulaValida(competidor.cmp_cedula))
+            {
+                Respuesta respu = new Respuesta();
+                respu.CodigoError = 2;
+
+                return respu;
+            }
+
+
 
             Respuesta res = p_Competidor.actualizaCompetidor(competidor);
             return res;
@@ -36,6 +45,13 @@ namespace Api_Karate_Pro.Controllers
         [Route("grabar")]
         public Respuesta m_1_3([FromBody] competidor_A_competidor competidor)
         {
+            if (!p_Competidor.EsCedulaValida(competidor.cmp_cedula))
+            {
+                Respuesta respu = new Respuesta();
+                respu.CodigoError = 2;
+
+                return respu;
+            }
 
             Respuesta res = p_Competidor.grabaCompetidor(competidor);
             return res;

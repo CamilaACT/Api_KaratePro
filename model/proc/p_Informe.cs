@@ -374,12 +374,11 @@ namespace Api_Karate_Pro.model.proc
             Respuesta res = new Respuesta() { CodigoError = 0, Message = "Sin Resultados", Result = null };
             try
             {
-                // Obtiene datos crudos desde el SP
                 DataTable dt = ObtenerDatosCrudosCompetidores(datosus.com_id, datosus.clu_id, datosus.tec_id);
 
                 if (dt != null && dt.Rows.Count > 0)
                 {
-                    // Convertir DataTable a lista de objetos para facilitar el procesamiento
+              
                     var datos = new List<CompetidorData>();
                     foreach (DataRow row in dt.Rows)
                     {
@@ -397,7 +396,7 @@ namespace Api_Karate_Pro.model.proc
                     // Filtrar competidores con al menos una pelea ganada
                     var competidoresFiltrados = datos
                         .GroupBy(d => d.CompetidorId)
-                        .Where(grupo => grupo.Any(g => g.RivalGano == 1)) // Filtrar por al menos una pelea ganada
+                        .Where(grupo => grupo.Any(g => g.RivalGano == 1)) 
                         .SelectMany(g => g)
                         .ToList();
 
@@ -438,7 +437,7 @@ namespace Api_Karate_Pro.model.proc
                     // Ordenar resultados por eficiencia descendente
                     groupedData = groupedData.OrderByDescending(r => r.Eficiencia).ToList();
 
-                    // Actualizar la respuesta
+
                     res.CodigoError = -1;
                     res.Message = "OK";
                     res.Result = groupedData;
@@ -522,8 +521,6 @@ namespace Api_Karate_Pro.model.proc
 
             return res;
         }
-
-
         public static Respuesta GetInformeClubesPorCompetenciaConForeach(int comId)
         {
             Respuesta res = new Respuesta() { CodigoError = 0, Message = "Sin Resultados", Result = null };
@@ -605,8 +602,6 @@ namespace Api_Karate_Pro.model.proc
 
             return res;
         }
-
-
 
 
         public static DataTable ObtenerDatosCrudos (int comid)
@@ -727,7 +722,111 @@ namespace Api_Karate_Pro.model.proc
             }
         }
 
-       
+        public static Respuesta GetInformeCompetidores(int comId)
+        {
+            Respuesta res = new Respuesta() { CodigoError = 0, Message = "Sin Resultados", Result = null };
+            try
+            {
+                DataTable dt = ObtenerDatosCrudosCompetidores(comId);
+
+                if (dt != null && dt.Rows.Count > 0)
+                {
+
+                    var datos = dt.AsEnumerable()
+                     .Select(row => new
+                     {
+                         CompetidorId = row.Field<int>("CompetidorId"), // int
+                         CompetidorNombre = row.Field<string>("CompetidorNombre"), // string
+                         RivalGano = row.Field<int>("RivalGano"), // int
+                         TiempoPuntuacion = row.Field<int?>("TiempoPuntuacion") ?? 0, // int nullable convertido a int
+                         TecnicaId = row.Field<int?>("TecnicaId"), // Nullable int
+                         Tecnica = row.Field<string>("Tecnica"), // string
+                         Puntos = row.Field<int?>("Puntos") ?? 0 // int nullable convertido a int
+                     }).ToList();
+
+
+                    var resultados = new List<dynamic>();
+
+                    foreach (var grupo in datos.GroupBy(d => new { d.CompetidorId, d.CompetidorNombre }))
+                    {
+                        var competidorId = grupo.Key.CompetidorId;
+                        var competidorNombre = grupo.Key.CompetidorNombre;
+
+                        // Promedio de tiempo de puntuación
+                        double promedioTiempo = grupo.Average(g => g.TiempoPuntuacion);
+
+                        // Promedio de puntos
+                        double promedioPuntos = grupo.Average(g => g.Puntos);
+
+
+                        // Técnica más empleada
+                        string tecnicaMasEmpleada = grupo
+                            .GroupBy(g => g.Tecnica)
+                            .OrderByDescending(g => g.Count())
+                            .Select(g => g.Key)
+                            .FirstOrDefault();
+
+                        resultados.Add(new
+                        {
+                            CompetidorId = competidorId,
+                            CompetidorNombre = competidorNombre,
+                            PromedioTiempo = promedioTiempo,
+                            PromedioPuntos = promedioPuntos,
+                            TecnicaMasEmpleada = tecnicaMasEmpleada
+                        });
+                    }
+
+                    res.CodigoError = -1;
+                    res.Message = "OK";
+                    res.Result = resultados.OrderBy(r => r.PromedioTiempo).ToList();
+                }
+            }
+            catch (Exception ex)
+            {
+                res.CodigoError = -100;
+                res.Message = "Error inesperado";
+                res.Message = ex.Message;
+            }
+
+            return res;
+        }
+
+
+        public static DataTable ObtenerDatosCrudosCompetidores(int comId)
+        {
+            Respuesta res = new Respuesta() { CodigoError = 0, Message = "Sin Resultados", Result = null };
+            try
+            {
+                data.DAO.c_base_datos cb = new data.DAO.c_base_datos();
+                System.Data.DataTable dt;
+                string strCon = util.Conexion.Conexion.CadenaConexion();
+                string[] vector = new string[1];
+                cb.sp = "usp_Web_datos_crudos_top_tiempo"; // Nombre del SP
+                vector[0] = "@com_id,i," + comId;
+                dt = cb.consultar(vector, 1, strCon);
+
+                res.CodigoError = cb.valo_erro;
+                if (res.CodigoError == -1)
+                {
+                    res.Message = "OK";
+                    res.Message = cb.valo_resp;
+                    return dt;
+                }
+                else
+                {
+                    res.Message = "Que pena me da tu caso";
+                    res.Message = cb.valo_resp;
+                    return dt;
+                }
+            }
+            catch (Exception ex)
+            {
+                res.CodigoError = -100;
+                res.Message = "Error inesperado";
+                res.Message = ex.Message;
+                return null;
+            }
+        }
 
 
 
