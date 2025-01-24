@@ -1,12 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\SeptimoSemestre\\Web\\AdminCore\\ApiCore\\Api_Karate_Pro\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\Metodologia\\Back\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ED350F88-2B09-4520-8521-CA8E3597A824}|Api_Karate_Pro.csproj|c:\\users\\camil\\onedrive\\documentos\\udla\\metodologia\\back\\util\\conexion\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED350F88-2B09-4520-8521-CA8E3597A824}|Api_Karate_Pro.csproj|solutionrelative:util\\conexion\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\Metodologia\\Back\\util\\Conexion\\Conexion.cs",
+              "RelativeDocumentMoniker": "util\\Conexion\\Conexion.cs",
+              "ToolTip": "C:\\Users\\camil\\OneDrive\\Documentos\\Udla\\Metodologia\\Back\\util\\Conexion\\Conexion.cs",
+              "RelativeToolTip": "util\\Conexion\\Conexion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T17:12:50.362Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
