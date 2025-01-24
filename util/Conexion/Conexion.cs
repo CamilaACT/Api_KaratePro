@@ -3,8 +3,8 @@
     public class Conexion
     {
 
-        //private static string servidor = @"camilacabrera.database.windows.net";
-        private static string servidor = @"host.docker.internal\CAMILASQL";
+        private static string servidor = @"camilacabrera.database.windows.net";
+        //private static string servidor = @"host.docker.internal\CAMILASQL";
         private static string base_tip = "KaratePro";
         private static string usuario = "camila";
         private static string password = "Cact2003*";
