@@ -10,7 +10,7 @@ namespace Api_Karate_Pro.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+    //[Authorize]
     public class RolController : ControllerBase
     {
         [HttpGet]
